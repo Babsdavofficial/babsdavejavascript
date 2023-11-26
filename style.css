@@ -1,0 +1,87 @@
+body{
+    background:linear-gradient(90deg,#08001f,#30197d);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.board{
+    background:rgba(255, 0, 255, 0.11);
+    width:11rem;
+    padding-bottom: 20px;
+    
+    padding:20px;
+    color:#fff;
+    margin: auto;
+    margin-top: 10%;
+    text-align:center;
+    
+}
+.time{
+    font-size: 80px;
+    text-align: center;
+    backdrop-filter: blur(200px);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+   
+}
+span{
+   padding-left: 20px;
+   padding-right: 20px;
+    
+}
+#hrs::after{
+    content: 'HRS';
+    font-size: 10px;
+    position: absolute;
+    text-align: center;
+}
+#min::after{
+    content: 'MINS';
+    font-size:10px;
+    position: absolute;
+    text-align: center;
+}
+#sec::after{
+    content: 'SECS';
+    font-size: 10px;
+    position: absolute;
+    text-align: center;
+}
+#date{
+    text-align: center;
+    width:11rem;
+    height:180px;
+    background-color: rgba(200, 0, 255, 0.5);
+    position: absolute;
+    left:30%;
+    margin-left: 128px;
+    margin-top: -120px;
+    padding:20px;
+    color:white;
+    z-index: -1;
+}
+#date2{
+    text-align: center;
+    width:11rem;
+    height: 80px;
+    background-color: rgba(200, 0, 255, 0.5);
+    position: absolute;
+    color: white;
+    right:40%;
+    padding-top: 80px;
+    margin-top: -100px;
+    z-index: -1;
+    padding: 20px;
+    padding-top: 100px;
+    
+}
+@media (max-width:396px){
+    .board{
+        margin-top: 30%;
+    }
+    #date{
+        left:-15%;
+    }
+    #date2{
+        left:20%;
+    }
+}
